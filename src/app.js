@@ -18,5 +18,9 @@ if(readLineSync.keyInYN('you want to search a book by category? ')) {
                console.log(category)
           }
      })
+} else {
+     books.forEach(category => {
+          console.log(category)
+     })
 }
 
