@@ -15,12 +15,14 @@ if(readLineSync.keyInYN('you want to search a book by category? ')) {
 
      books.map((category) => {
           if(category.categoria === categoryOptions[categoryOfBook]){
-               console.log(category)
+               console.table(category)
           }
      })
+
 } else {
-     books.forEach(category => {
-          console.log(category)
-     })
+     const booksSorted = books.sort((a, b) => {a.paginas - b.paginas})
+
+     console.log('All books available:')
+     console.table(booksSorted)
 }
 

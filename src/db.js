@@ -52,16 +52,7 @@ const livros = [
          paginas: 231,
          recomenda: true,
          leu: true
-     },
-     { 
-        id: 7,
-        nome: "Teste",
-        autor:"Eduardo galeano",
-        categoria: "Américas",
-        paginas: 400,
-        recomenda: false,
-        leu: false
-    },
+     }
  ]
  
  module.exports = livros
